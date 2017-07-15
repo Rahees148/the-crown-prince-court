@@ -5,7 +5,8 @@
       templateUrl: 'auto-suggest-tmp.html',
       bindings: {
         onKeyPress: '&',
-        resultArr: '<'
+        resultArr: '<',
+        noResult : '<'
       },
       controller: 'autoSuggestComController',
       controllerAs: 'asc' 

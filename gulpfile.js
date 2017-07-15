@@ -1,24 +1,15 @@
-// Generated on 2016-06-26 using generator-angular 0.15.1
 'use strict';
 
 // Inculde required modules
 var gulp = require( 'gulp' );
 var $load = require( 'gulp-load-plugins' )();
-var fs = require( 'fs' );
 var openURL = require( 'open' );
 var rimraf = require( 'rimraf' );
 var wiredep = require( 'wiredep' ).stream;
 var runSequence = require( 'run-sequence' );
-var argv = require( 'yargs' ).argv;
 var sass = require('gulp-sass');
 var livereload = require('gulp-livereload');
-var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
-var del = require('del');
-var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
+
 
 
 // End required modules
@@ -132,43 +123,6 @@ gulp.task( 'watch', function () {
 } );
 
 
-
-/**
-* copy images to dist
-*/
-gulp.task('images', function() {
-  return gulp.src('app/images/**/*')
-  .pipe(gulp.dest('dist/images'))
-})
-
-/**
-* copy font to dist
-*/
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'))
-})
-/**
-* Clean
-*/
-gulp.task('clean:dist', function() {
-  return del.sync('dist');
-})
-
-/**
-* Build
-*/
-gulp.task('build', [`clean:dist`, `sass`, `useref`, `images`, `fonts`], function (){
-  console.log('Building files');
-})
-
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
-});
 
 /**
 * Task to serve the client for developement purpose
