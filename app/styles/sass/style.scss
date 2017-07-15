@@ -1,0 +1,135 @@
+$light_violet : #7c7891;
+$bg_color : #443f5d;
+$bg_odd : #f7f7f7;
+$bg_even : #e8e8e8;
+$border_color : #403d5a;
+
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fa-search {
+  color: $light_violet;
+}
+.searchCom {
+  position: relative;
+}
+
+.searchBar {
+  background-color: $bg_color;
+  width: 100%;
+  height: 50px;
+  border-top: 5px solid black;
+}
+
+.searchForm {
+  padding: 10px 0 0 25px;
+  &__searchInput {
+    background-color: $bg_color;
+    border: none;
+    border-bottom: 1px solid $light_violet;
+    width: 54%;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+  }
+}
+
+.searchResult {
+  #{&}__list {
+  min-height: 56px;
+  padding: 15px 25px;
+  height: auto;
+  display: block;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  color: #3d3d3d;
+  &:hover{
+    background-color: $light_violet ;
+  }
+  &:nth-child(even) {
+    background-color: $bg-even;
+  }
+  &:nth-child(odd) {
+    background-color: $bg-odd;
+  }
+  h4{
+    color: #3d3d3d;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  address{
+    width: 50%;
+    float: left;
+
+    .phone {
+      margin-right: 30px;
+    }
+    @media (max-width:767px){
+      width: 100%;
+      span{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+        &.phone {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .policyInfo{
+    width: 45%;
+    float: right;
+    @media (max-width:767px){
+      width: 100%;
+      span{
+        width: 100%;
+        float: left;
+      }
+    }
+  }
+}
+
+&Container {
+  position: absolute;
+  width: calc(100% - 10px);
+  top: 56px;
+  z-index: 1;
+  border:5px solid $border_color;
+  border-bottom-width: 10px;
+  border-top: 0px;
+}
+
+}
+[class^="fa-"], [class*=" fa-"] {
+  margin-right: 5px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#7a768d;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:#7a768d;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:#7a768d;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:#7a768d;
+}

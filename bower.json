@@ -1,0 +1,25 @@
+{
+  "name": "The Crown Prince Court",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "*"
+  },
+  "appPath": "app",
+  "moduleName": "CPC",
+  "overrides": {},
+  "authors": [
+    "Rayees <rahees148@gmail.com"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

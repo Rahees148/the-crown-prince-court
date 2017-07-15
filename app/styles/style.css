@@ -1,0 +1,108 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-style: normal; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.fa-search {
+  color: #7c7891; }
+
+.searchCom {
+  position: relative; }
+
+.searchBar {
+  background-color: #443f5d;
+  width: 100%;
+  height: 50px;
+  border-top: 5px solid black; }
+
+.searchForm {
+  padding: 10px 0 0 25px; }
+  .searchForm__searchInput {
+    background-color: #443f5d;
+    border: none;
+    border-bottom: 1px solid #7c7891;
+    width: 54%;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px; }
+
+.searchResult__list {
+  min-height: 56px;
+  padding: 15px 25px;
+  height: auto;
+  display: block;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  color: #3d3d3d; }
+  .searchResult__list:hover {
+    background-color: #7c7891; }
+  .searchResult__list:nth-child(even) {
+    background-color: #e8e8e8; }
+  .searchResult__list:nth-child(odd) {
+    background-color: #f7f7f7; }
+  .searchResult__list h4 {
+    color: #3d3d3d;
+    font-size: 22px;
+    margin-bottom: 10px; }
+  .searchResult__list address {
+    width: 50%;
+    float: left; }
+    .searchResult__list address .phone {
+      margin-right: 30px; }
+    @media (max-width: 767px) {
+      .searchResult__list address {
+        width: 100%; }
+        .searchResult__list address span {
+          width: 100%;
+          float: left;
+          margin-bottom: 10px; }
+          .searchResult__list address span.phone {
+            margin-right: 0; } }
+  .searchResult__list .policyInfo {
+    width: 45%;
+    float: right; }
+    @media (max-width: 767px) {
+      .searchResult__list .policyInfo {
+        width: 100%; }
+        .searchResult__list .policyInfo span {
+          width: 100%;
+          float: left; } }
+
+.searchResultContainer {
+  position: absolute;
+  width: calc(100% - 10px);
+  top: 56px;
+  z-index: 1;
+  border: 5px solid #403d5a;
+  border-bottom-width: 10px;
+  border-top: 0px; }
+
+[class^="fa-"], [class*=" fa-"] {
+  margin-right: 5px; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #7a768d; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #7a768d; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #7a768d; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #7a768d; }
