@@ -27,7 +27,7 @@ and follow the instructions there.
 
 
 
-## To Run the app ##
+## To Run the app Locally ##
 
 `npm start` or `gulp serve`
 
