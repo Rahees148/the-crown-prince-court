@@ -8,7 +8,7 @@ Autosuggestion app
 
 Download the package :
 
-`git clone https://del.tools.publicis.sapient.com/bitbucket/scm/avh/abbvie-humira-ui.git`
+`git clone https://github.com/Rahees148/the-crown-prince-court.git`
 
 Install the package :
 
