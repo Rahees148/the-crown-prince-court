@@ -30,3 +30,6 @@ and follow the instructions there.
 ## To Run the app ##
 
 `npm start` or `gulp serve`
+
+## DEMO ##
+visit : https://plnkr.co/oRaQO3gFg7WCULsPvzP7
